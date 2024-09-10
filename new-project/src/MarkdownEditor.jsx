@@ -1,8 +1,6 @@
 import React from "react";
 import ReactMarkdown from 'react-markdown'
 import { useState } from 'react';
-import remarkBreaks from "remark-breaks";
-import remarkGfm from "remark-gfm";
 import './index.css'
 const MarkdownEditor = () => {
     const [markdown, setMarkdown] = useState(`# Header (H1)
@@ -39,8 +37,6 @@ console.log(x);
                 aria-live="polite">
             <ReactMarkdown
                     children={markdown}
-                    remarkPlugins={[remarkGfm, remarkBreaks]}
-                    
                 />
             </div>
         </div>
