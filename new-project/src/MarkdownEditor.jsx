@@ -1,9 +1,13 @@
 import React from "react";
 import ReactMarkdown from 'react-markdown'
 import { useState } from 'react';
-import remarkGfm from 'remark-gfm';
 import remarkBreaks from "remark-breaks";
 import './index.css'
+
+
+
+
+
 
 const MarkdownEditor = () => {
     const [markdown, setMarkdown] = useState(`# Header (H1)
